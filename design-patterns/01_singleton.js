@@ -29,7 +29,7 @@ class Singleton {
 
 class NotSingleton {
   constructor() {
-    this.baseUrl = ''
+    this.baseUrl = "";
   }
   setBaseUrl(baseUrl) {
     this.baseUrl = baseUrl

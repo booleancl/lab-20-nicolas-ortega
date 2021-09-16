@@ -6,7 +6,7 @@
 function logMethodCallDecorator(targetMethod) {
   const decoratedFunction = (...args) => {
     // Real use case: Generate log in Backend Service that gets some sensitive data
-    console.log(`🔎 ¡Important method invoked!: ${targetMethod.name} with arguments ${args}`)
+    console.log(`🔎 ¡Important method invoked!: ${targetMethod.name} with arguments ${JSON.stringify(args)}`)
 
     targetMethod(...args)
   }
